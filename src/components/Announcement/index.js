@@ -13,9 +13,7 @@ const Container = styled.div`
 `;
 const Announcement = () => {
   return (
-    <Container>
-      New Year New You! Free Shipping on Orders Over $75.00!
-    </Container>
+    <Container>New Member Special! 10% OFF on your first order!</Container>
   );
 };
 
