@@ -39,3 +39,38 @@ export const categories = [
     title: 'Just motivation.',
   },
 ];
+
+export const products = [
+  {
+    id: 1,
+    img: 'https://images.lululemon.com/is/image/lululemon/LM5543S_036763_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+  },
+  {
+    id: 2,
+    img: 'https://images.lululemon.com/is/image/lululemon/LM3CZPS_045595_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+  },
+  {
+    id: 3,
+    img: 'https://images.lululemon.com/is/image/lululemon/LM3BF7S_038068_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+  },
+  {
+    id: 4,
+    img: 'https://images.lululemon.com/is/image/lululemon/LM3CT8S_051905_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+  },
+  {
+    id: 5,
+    img: 'https://images.lululemon.com/is/image/lululemon/LW3CE0S_050898_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+  },
+  {
+    id: 6,
+    img: 'https://images.lululemon.com/is/image/lululemon/LW3DZNS_034646_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+  },
+  {
+    id: 7,
+    img: 'https://images.lululemon.com/is/image/lululemon/LW3DW1S_021820_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+  },
+  {
+    id: 8,
+    img: 'https://images.lululemon.com/is/image/lululemon/LW3DUIS_047870_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+  },
+];
