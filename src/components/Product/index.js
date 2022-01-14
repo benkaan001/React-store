@@ -1,6 +1,5 @@
 import {
   FavoriteBorderOutlined,
-  SearchOutlined,
   ShoppingCartOutlined,
 } from '@material-ui/icons';
 import React from 'react';
@@ -68,9 +67,7 @@ const Product = ({ item }) => {
         <Icon>
           <ShoppingCartOutlined />
         </Icon>
-        <Icon>
-          <SearchOutlined />
-        </Icon>
+
         <Icon>
           <FavoriteBorderOutlined />
         </Icon>
