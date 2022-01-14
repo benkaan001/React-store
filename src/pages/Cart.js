@@ -4,11 +4,13 @@ import Announcement from '../components/Announcement';
 import Footer from '../components/Footer';
 import Navbar from '../components/NavBar';
 import { Add, Remove } from '@material-ui/icons';
+import { mobile } from '../mobileScreen';
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 20px;
+  ${mobile({ padding: '10px' })}
 `;
 
 const Title = styled.h1`
@@ -43,6 +45,7 @@ const TopText = styled.span`
 const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mobile({ flexDirection: 'column' })}
 `;
 
 const Info = styled.div`
@@ -52,6 +55,7 @@ const Info = styled.div`
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mobile({ flexDirection: 'column' })}
 `;
 const ProductDetail = styled.div`
   flex: 2;
@@ -59,12 +63,14 @@ const ProductDetail = styled.div`
 `;
 const Image = styled.img`
   width: 200px;
+  ${mobile({ marginBottom: '20px' })}
 `;
 const Details = styled.div`
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  ${mobile({ justifyContent: 'space-between' })}
 `;
 const ProductName = styled.span`
   font-weight: 300;
@@ -106,11 +112,13 @@ const ProductQtyContainer = styled.div`
 const ProductQty = styled.div`
   font-size: 24px;
   margin: 5px;
+  ${mobile({ margin: '5px 15px' })}
 `;
 
 const ProductPrice = styled.div`
   font-size: 30px;
   font-weight: 200;
+  ${mobile({ marginBottom: '20px' })}
 `;
 
 const Hr = styled.hr`

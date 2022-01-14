@@ -1,15 +1,13 @@
 import { Badge } from '@material-ui/core';
-import {
-  LocationOnOutlined,
-  Search,
-  ShoppingCartOutlined,
-} from '@material-ui/icons';
+import { ShoppingCartOutlined } from '@material-ui/icons';
 
 import React from 'react';
 import styled from 'styled-components';
+import { mobile } from '../../mobileScreen';
 
 const Container = styled.div`
   height: 60px;
+  ${mobile({ height: '50px' })}
 `;
 
 const Wrapper = styled.div`
@@ -17,18 +15,21 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ${mobile({ padding: '10px 0px' })}
 `;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  ${mobile({ flex: '2' })}
 `;
 
 const Logo = styled.h1`
   font-weight: bold;
   font-size: 2.5rem;
   color: var(--charcoal);
+  ${mobile({ fontSize: '24px' })}
 `;
 
 const Right = styled.div`
@@ -36,12 +37,14 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  ${mobile({ flex: 2, justifyContent: 'center' })}
 `;
 
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 30px;
+  ${mobile({ fontSize: '12px', marginLeft: '10px' })}
 `;
 
 const Navbar = () => {
@@ -53,10 +56,6 @@ const Navbar = () => {
         </Left>
 
         <Right>
-          <MenuItem>
-            <LocationOnOutlined />
-          </MenuItem>
-          US
           <MenuItem> REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
           <MenuItem>

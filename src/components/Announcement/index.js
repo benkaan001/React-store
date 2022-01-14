@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { mobile } from '../../mobileScreen';
 
 const Container = styled.div`
   height: 30px;
@@ -10,6 +11,7 @@ const Container = styled.div`
   justify-content: center;
   font-size: 1rem;
   letter-spacing: 1px;
+  ${mobile({ fontSize: '10px', letterSpacing: '0' })}
 `;
 const Announcement = () => {
   return (

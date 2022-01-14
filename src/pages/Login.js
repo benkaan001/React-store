@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { mobile } from '../mobileScreen';
 
 const Container = styled.div`
   width: 100vw;
@@ -19,12 +20,14 @@ const Wrapper = styled.div`
   padding: 20px;
   width: 25%;
   background-color: white;
+  ${mobile({ width: '85%' })}
 `;
 
 const Title = styled.h1`
   font-size: 24px;
   font-weight: 300;
   letter-spacing: 2px;
+  ${mobile({ textAlign: 'center' })}
 `;
 
 const Form = styled.form`
@@ -53,6 +56,7 @@ const Link = styled.a`
   font-size: 12px;
   text-decoration: underline;
   cursor: pointer;
+  ${mobile({ margin: '0px 2px' })}
 `;
 
 const Login = () => {
