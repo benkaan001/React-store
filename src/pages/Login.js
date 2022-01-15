@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { mobile } from '../mobileScreen';
+import { mobile, tablet } from '../mobileScreen';
 
 const Container = styled.div`
   width: 100vw;
@@ -21,6 +21,7 @@ const Wrapper = styled.div`
   width: 25%;
   background-color: white;
   ${mobile({ width: '85%' })}
+  ${tablet({ width: '50%' })}
 `;
 
 const Title = styled.h1`
@@ -50,13 +51,15 @@ const Button = styled.button`
   color: white;
   cursor: pointer;
   margin-bottom: 10px;
+  ${tablet({ width: '30%', padding: '10px 15px' })}
 `;
 const Link = styled.a`
   margin: 5px 5px;
   font-size: 12px;
   text-decoration: underline;
   cursor: pointer;
-  ${mobile({ margin: '0px 2px' })}
+  ${mobile({ margin: '0px 2px' })};
+  ${tablet({ margin: '0px 15px' })}
 `;
 
 const Login = () => {

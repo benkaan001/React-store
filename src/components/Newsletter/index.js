@@ -1,7 +1,7 @@
 import { Send } from '@material-ui/icons';
 import React from 'react';
 import styled from 'styled-components';
-import { mobile } from '../../mobileScreen';
+import { mobile, tablet } from '../../mobileScreen';
 
 const Container = styled.div`
   height: 60vh;
@@ -16,13 +16,15 @@ const Title = styled.h1`
   font-size: 70px;
   margin-bottom: 20px;
   ${mobile({ fontSize: '40px', fontWeight: 600 })}
+  ${tablet({ fontSize: '60px' })}
 `;
 
 const Description = styled.div`
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 20px;
-  ${mobile({ textAlign: 'center', fontSize: '18px' })}
+  ${mobile({ textAlign: 'center', fontSize: '18px' })};
+  ${tablet({ fontSize: '20px' })}
 `;
 
 const InputContainer = styled.div`

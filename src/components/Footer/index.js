@@ -10,7 +10,7 @@ import {
 } from '@material-ui/icons';
 import React from 'react';
 import styled from 'styled-components';
-import { mobile } from '../../mobileScreen';
+import { mobile, tablet } from '../../mobileScreen';
 
 const Container = styled.div`
   display: flex;
@@ -44,6 +44,7 @@ const Center = styled.div`
   flex: 1;
   padding: 20px;
   ${mobile({ display: 'none' })}
+  ${tablet({ display: 'none' })}
 `;
 
 const Title = styled.h3`

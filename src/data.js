@@ -8,14 +8,14 @@ export const sliderItems = [
   },
   {
     id: 2,
-    img: 'https://images.unsplash.com/photo-1603808033192-082d6919d3e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+    img: 'https://images.pexels.com/photos/4009358/pexels-photo-4009358.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: '2021 GONE! TRY SOMETHING NEW!',
     desc: ' NO MIRROR REQUIRED. JUST MOTIVATION!',
     bg: 'rgb(253, 229, 209)',
   },
   {
     id: 3,
-    img: 'https://images.unsplash.com/photo-1608667508764-33cf0726b13a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNuZWFrZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+    img: 'https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d29ya291dHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
     title: '2022! GREEN LIGTHS AHEAD.',
     desc: 'THERE IS NO STOPPING YOU!',
     bg: 'rgb(255, 240, 203)',
@@ -35,7 +35,7 @@ export const categories = [
   },
   {
     id: 3,
-    img: 'https://images.unsplash.com/photo-1585834830884-392089dfd9f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTZ8fHdvcmtvdXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+    img: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHdvcmtvdXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
     title: 'Just motivation.',
   },
 ];

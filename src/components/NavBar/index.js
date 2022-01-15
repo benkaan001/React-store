@@ -28,7 +28,6 @@ const Left = styled.div`
 const Logo = styled.h1`
   font-weight: bold;
   font-size: 2.5rem;
-  color: var(--charcoal);
   ${mobile({ fontSize: '24px' })}
 `;
 
@@ -52,7 +51,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Logo> H || A || L || O </Logo>
+          <Logo> H | A | L | O </Logo>
         </Left>
 
         <Right>

@@ -4,13 +4,14 @@ import Announcement from '../components/Announcement';
 import Footer from '../components/Footer';
 import Navbar from '../components/NavBar';
 import { Add, Remove } from '@material-ui/icons';
-import { mobile } from '../mobileScreen';
+import { mobile, tablet } from '../mobileScreen';
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 20px;
   ${mobile({ padding: '10px' })}
+  ${tablet({ padding: '5px' })}
 `;
 
 const Title = styled.h1`
@@ -46,6 +47,7 @@ const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
   ${mobile({ flexDirection: 'column' })}
+  ${tablet({ flexDirection: 'column' })}
 `;
 
 const Info = styled.div`
@@ -55,7 +57,7 @@ const Info = styled.div`
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
-  ${mobile({ flexDirection: 'column' })}
+  ${mobile({ flexDirection: 'column' })};
 `;
 const ProductDetail = styled.div`
   flex: 2;
@@ -70,7 +72,7 @@ const Details = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  ${mobile({ justifyContent: 'space-between' })}
+  ${mobile({ justifyContent: 'space-between' })};
 `;
 const ProductName = styled.span`
   font-weight: 300;
@@ -133,10 +135,12 @@ const Summary = styled.div`
   border-radius: 10px;
   padding: 20px;
   height: 50vh;
+  ${tablet({ padding: '10px' })}
 `;
 
 const SummaryTitle = styled.h1`
   font-weight: 200;
+  ${tablet({ textAlign: 'center' })}
 `;
 
 const SummaryItemContainer = styled.div`
@@ -145,6 +149,7 @@ const SummaryItemContainer = styled.div`
   justify-content: space-between;
   font-weight: ${(props) => props.type === 'total' && '500'};
   font-size: ${(props) => props.type === 'total' && '24px'};
+  ${tablet({ justifyContent: 'space-around' })}
 `;
 
 const SummaryItemText = styled.span``;
