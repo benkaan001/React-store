@@ -123,11 +123,11 @@ const Footer = () => {
       <Right>
         <Title>CONTACT US</Title>
         <ContactItem>
-          <Room style={{ marginRight: '10px' }} /> 1818 Cornwall Ave, Vancouver
+          <Room style={{ marginRight: '10px' }} /> 2022 Cornwall Ave, Vancouver
           BC V6J 1C7
         </ContactItem>
         <ContactItem>
-          <Phone style={{ marginRight: '10px' }} /> 1.877.263.9300
+          <Phone style={{ marginRight: '10px' }} /> 1.877.263.2022
         </ContactItem>
         <ContactItem>
           <MailOutline style={{ marginRight: '10px' }} /> letschat@halo.com
