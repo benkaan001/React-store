@@ -3,7 +3,7 @@ export const sliderItems = [
     id: 1,
     img: 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb24lMjBzcG9ydHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
     title: 'NEW YEAR NEW YOU!',
-    desc: ' NO BETTER TIME THAN NOW TO GET MOVING!',
+    desc: ` NO BETTER TIME THAN NOW TO GET MOVING!`,
     bg: 'rgb(247, 247, 247)',
   },
   {
