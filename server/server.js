@@ -1,22 +1,18 @@
 const express = require('express');
 require('dotenv').config();
 
+const routes = require('./routes/index');
+
 const app = express();
 
 // DB connection
 const connectDB = require('./config/connection');
 
+// access to req.body
 app.use(express.json());
 
-// routers
-
-const userRoutes = require('./routes/user');
-const productRoutes = require('./routes/product');
-
-// routes
-
-app.use('/api/users', userRoutes);
-app.use('./api/products', productRoutes);
+// turn on routes
+app.use(routes);
 
 const PORT = process.env.PORT || 3001;
 
