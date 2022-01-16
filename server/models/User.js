@@ -8,6 +8,7 @@ const UserSchema = new mongoose.Schema(
       min: [3, 'Must have at least 3 characters.'],
       max: [25, 'Cannot exceed 25 characters!'],
       trim: true,
+      unique: true,
     },
     email: {
       type: String,
@@ -27,6 +28,7 @@ const UserSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    img: { type: String },
   },
   {
     timestamps: true,
