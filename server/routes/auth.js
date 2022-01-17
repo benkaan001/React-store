@@ -57,7 +57,7 @@ router.post('/login', async (req, res) => {
       secret,
       { expiresIn: expiration }
     );
-
+    // send all the userInfo inside Mongoose ._doc except user password
     const { password, ...userInfo } = user._doc;
     res.status(200).json({ ...userInfo, signToken });
   } catch (error) {
