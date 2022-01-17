@@ -3,6 +3,8 @@ require('dotenv').config();
 
 const routes = require('./routes/index');
 
+const cors = require('cors');
+
 const app = express();
 
 // DB connection
@@ -13,6 +15,9 @@ app.use(express.json());
 
 // turn on routes
 app.use(routes);
+
+// activate cors
+app.use(cors());
 
 const PORT = process.env.PORT || 3001;
 
