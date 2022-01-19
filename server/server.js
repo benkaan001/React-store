@@ -7,6 +7,9 @@ const cors = require('cors');
 
 const app = express();
 
+// activate cors
+app.use(cors());
+
 // DB connection
 const connectDB = require('./config/connection');
 
@@ -15,9 +18,6 @@ app.use(express.json());
 
 // turn on routes
 app.use(routes);
-
-// activate cors
-app.use(cors());
 
 const PORT = process.env.PORT || 3001;
 

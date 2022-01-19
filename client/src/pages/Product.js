@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import NavBar from '../components/NavBar';
 import Announcement from '../components/Announcement';
@@ -6,6 +6,10 @@ import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 import { Add, Remove } from '@material-ui/icons';
 import { mobile } from '../mobileScreen';
+import { useLocation } from 'react-router-dom';
+import { publicRequest } from '../fetchRequest';
+import { addProduct } from '../redux/cartRedux';
+import { useDispatch } from 'react-redux';
 
 const Container = styled.div``;
 
@@ -119,47 +123,74 @@ const Button = styled.button`
 `;
 
 const Product = () => {
+  const location = useLocation();
+  const id = location.pathname.split('/')[2];
+
+  const [product, setProduct] = useState({});
+  const [quantity, setQuantity] = useState(1);
+  const [color, setColor] = useState('');
+  const [size, setSize] = useState('');
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const getProduct = async () => {
+      try {
+        const response = await publicRequest.get('/products/' + id);
+        setProduct(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getProduct();
+  }, [id]);
+
+  const quantityHandler = (type) => {
+    if (type === 'dec') {
+      quantity > 1 && setQuantity(quantity - 1);
+    } else {
+      setQuantity(quantity + 1);
+    }
+  };
+
+  const clickHandler = () => {
+    dispatch(addProduct({ ...product, quantity, color, size }));
+  };
+
   return (
     <Container>
       <NavBar />
       <Announcement />
       <Wrapper>
         <ImgContainer>
-          <Image src='https://images.lululemon.com/is/image/lululemon/LM3CZPS_045595_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72' />
+          <Image src={product.img} />
         </ImgContainer>
         <InfoContainer>
-          <Title>The Fundemental T-Shirt</Title>
-          <Desc>
-            When tech and comfort collide. This wardrobe staple blends cottony
-            soft fabric with our abrasion-resistant and anti-stink technologies
-            for a classic tee that’ll last.
-          </Desc>
-          <Price>$ 58.00</Price>
+          <Title>{product.title}</Title>
+          <Desc>{product.desc}</Desc>
+          <Price>${product.price}</Price>
           <FilterContainer>
             <Filter>
               <FilterTitle>Color</FilterTitle>
-              <FilterColor color='black' />
-              <FilterColor color='red' />
-              <FilterColor color='teal' />
+              {product.color?.map((c) => (
+                <FilterColor color={c} key={c} onClick={(e) => setColor(c)} />
+              ))}
             </Filter>
             <Filter>
               <FilterTitle>Size</FilterTitle>
-              <FilterSize>
-                <FilterSizeOption>XS</FilterSizeOption>
-                <FilterSizeOption>S</FilterSizeOption>
-                <FilterSizeOption>M</FilterSizeOption>
-                <FilterSizeOption>L</FilterSizeOption>
-                <FilterSizeOption>XL</FilterSizeOption>
+              <FilterSize onChange={(e) => setSize(e.target.value)}>
+                {product.size?.map((s) => (
+                  <FilterSizeOption key={s}>{s}</FilterSizeOption>
+                ))}
               </FilterSize>
             </Filter>
           </FilterContainer>
           <AddContainer>
             <AmountContainer>
-              <Remove />
-              <Amount>1</Amount>
-              <Add />
+              <Remove onClick={() => quantityHandler('dec')} />
+              <Amount>{quantity}</Amount>
+              <Add onClick={() => quantityHandler('inc')} />
             </AmountContainer>
-            <Button>ADD TO CART</Button>
+            <Button onClick={clickHandler}>ADD TO CART</Button>
           </AddContainer>
         </InfoContainer>
       </Wrapper>

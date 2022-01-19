@@ -27,16 +27,19 @@ export const categories = [
     id: 1,
     img: 'https://images.unsplash.com/photo-1539794830467-1f1755804d13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODl8fHdvcmtvdXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
     title: 'Stretch.Breathe.Repeat!',
+    category: 'womens',
   },
   {
     id: 2,
     img: 'https://images.unsplash.com/photo-1518214598173-1666bc921d66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzJ8fHdvcmtvdXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
     title: 'Flow through goals!',
+    category: 'mens',
   },
   {
     id: 3,
     img: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHdvcmtvdXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
     title: 'Just motivation.',
+    category: 'unisex',
   },
 ];
 
@@ -44,33 +47,41 @@ export const products = [
   {
     id: 1,
     img: 'https://images.lululemon.com/is/image/lululemon/LM5543S_036763_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+    category: 'mens',
   },
   {
     id: 2,
     img: 'https://images.lululemon.com/is/image/lululemon/LM3CZPS_045595_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+    category: 'mens',
   },
   {
     id: 3,
     img: 'https://images.lululemon.com/is/image/lululemon/LM3BF7S_038068_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+    category: 'mens',
   },
   {
     id: 4,
     img: 'https://images.lululemon.com/is/image/lululemon/LM3CT8S_051905_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+    category: 'mens',
   },
   {
     id: 5,
     img: 'https://images.lululemon.com/is/image/lululemon/LW3CE0S_050898_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+    category: 'womens',
   },
   {
     id: 6,
     img: 'https://images.lululemon.com/is/image/lululemon/LW3DZNS_034646_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+    category: 'womens',
   },
   {
     id: 7,
     img: 'https://images.lululemon.com/is/image/lululemon/LW3DW1S_021820_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+    category: 'womens',
   },
   {
     id: 8,
     img: 'https://images.lululemon.com/is/image/lululemon/LW3DUIS_047870_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
+    category: 'womens',
   },
 ];
